@@ -1,6 +1,6 @@
 import React from 'react'
 import {Routes, Route} from 'react-router-dom'
-import Home from './components/Pages/Home'
+import Home from './components/Pages/Home/Home'
 function App() {
   return (
     <div className='py-2 px-8'>

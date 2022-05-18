@@ -4,7 +4,7 @@ import {FcHome} from 'react-icons/fc'
 import {NavLink, Link} from 'react-router-dom'
 import {FaBars, Fatimes} from 'react-icons/fa'
 import {GiExitDoor} from 'react-icons/gi'
-import useClick from '../CustomHook/Click'
+import useClick from '../../CustomHook/Click'
 const Navbar = () => {
     const MenuLink = ({url, path}) => {
         return (
