@@ -15,7 +15,21 @@ module.exports = {
       'white1': ' hsl(228, 99%, 98%)',
       'white2': 'hsla(0, 0%, 100%, 0.9)'
      },
-    extend: {},
+    extend: {
+      gridTemplateRows: {
+        // Simple 8 row grid
+        '1/3': '1/2',
+        '2/3': '2/3'
+
+        // Complex site-specific row configuration
+      },
+      gridTemplateColumns: {
+        'section1': '70% 30%',
+        'section1.5': '60% 40%',
+        'section2': '30% 10% 60%',
+        'section2.5': '30% 30% 40%',
+      },
+    },
   },
   plugins: [],
 }

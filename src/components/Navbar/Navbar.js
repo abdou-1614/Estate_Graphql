@@ -46,7 +46,7 @@ const Navbar = () => {
                 </ul>
             )}
             <Link to='/auth' className='hidden md:block'>
-                <span className='font-semibold flex items-center gap-1'>Login <GiExitDoor className='text-[26px]'/></span>
+                <span className='font-semibold flex items-center gap-1 text-[20px]'>Login <GiExitDoor className='text-[28px] text-default'/></span>
             </Link>
             <button className='md:hidden' onClick={() => setToggel(!toggel)} ><span>{toggel ? <FaBars className='translate-x-px text-2xl font-[900] right-1'/> : <FaBars className='translate-x-px text-2xl font-[900] right-1'/>}</span></button>
         </nav>
