@@ -10,14 +10,14 @@ const Section1 = () => {
     const [location, setLocation] = useState("");
   
     return (
-      <section className='section_1'>
+      <section className='section_1 px-5'>
         {/* NAVBAR */}
         <div className='Navbar'>
           <Navbar />
         </div>
   
         {/* BACKGROUND IMAGES */}
-        <div className='img'></div>
+        <div className='img1'></div>
   
         {/* SECTION 1 CONTENT */}
         <div className=" pt-[120px] section_1_content">
@@ -34,6 +34,7 @@ const Section1 = () => {
               {/* LOCATION */}
               <div className="location_container">
                 <span>Location</span>
+                <FaMapMarkerAlt className='absolute translate-y-[2.3rem] text-default text-[17px]'/>
                 <input
                   type="text"
                   placeholder="Enter a Location"
