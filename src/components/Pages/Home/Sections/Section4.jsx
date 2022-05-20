@@ -3,7 +3,7 @@ import Home3 from '../../../../assets/popular5.jpg'
 const Section4 = () => {
   return (
     <section className="mt-20 overflow-hidden px-4 md:px-6
-    after:content-['*'] -z-10 after:absolute after:top-0 after:left-0 after:bg-white1 after:w-[100vw] after:h-[400px] ">
+    after:content-['*'] -z-10 after:absolute after:top-0 after:left-0  after:w-[100vw] after:h-[400px] ">
       {/* SECTION TITLE */}
       <div className="relative mb-8 pl-[10vw] pt-[3rem] md:pt-[6rem] ">
         <h1 className='text-default w-full sm:w-[80%] md:w-full
