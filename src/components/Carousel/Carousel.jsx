@@ -1,6 +1,7 @@
 import React from 'react'
 import {Swiper} from 'swiper/react'
 import {Pagination} from 'swiper'
+import './Carousel.scss'
 import 'swiper/scss'
 import 'swiper/scss/pagination'
 const Carousel = ({ children, slides }) => {
@@ -10,12 +11,14 @@ const Carousel = ({ children, slides }) => {
     spaceBetween={50}
     slidesPerView={slides}
     pagination={{ clickable: true }}
-    className="w-full"
     >
       {children}
       <div className='mt-[70px]' ></div>
     </Swiper>
   )
+}
+Carousel.defaultProps = {
+    slides : "auto"
 }
 
 export default Carousel

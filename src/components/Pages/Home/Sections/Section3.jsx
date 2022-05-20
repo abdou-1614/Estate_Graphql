@@ -6,13 +6,25 @@ import Card from '../../../Card/Card'
 
 const Section3 = () => {
   return (
-    <section className='mt-32 overflow-x-hidden px-4 md:px-6'>
+    <section className='mt-32 overflow-x-hidden px-2 md:px-4'>
       <div className='flex justify-between items-center mb-8'>
         <h1 className='text-default text-[1.3rem] font-bold'>Buy House</h1>
         <Button text={"See More"} path={"/buy"}/>
       </div>
-      <div className='p-5 cursor-pointer'>
+      <div className='p-2 cursor-pointer'>
         <Carousel>
+        <SwiperSlide>
+          <Card/>
+        </SwiperSlide> 
+        <SwiperSlide>
+          <Card/>
+        </SwiperSlide> 
+        <SwiperSlide>
+          <Card/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Card/>
+        </SwiperSlide>
         <SwiperSlide>
           <Card/>
         </SwiperSlide>

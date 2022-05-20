@@ -28,7 +28,8 @@ module.exports = {
         'section1.5': '60% 40%',
         'section2': '30% 10% 60%',
         'section2.5': '30% 30% 40%',
-        "section3": '15% 35% 50%'
+        "section3": '15% 35% 50%',
+        "section4": '50% 20% 15% 15%'
       },
     },
   },
