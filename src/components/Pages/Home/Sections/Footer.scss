@@ -68,7 +68,8 @@ footer {
 
         .subscribe_input {
             padding: 0.5rem 1rem;
-            border: 1px solid var(--gray);
+            margin-top: 5px;
+            border: 1px solid hsl(228, 66%, 53%);
             font-size: 1.1rem;
             display: flex;
             align-items: center;
@@ -81,7 +82,7 @@ footer {
                 align-items: center;
                 cursor: pointer;
                 &:hover svg {
-                    color: var(--dark-green);
+                    color: hsl(25, 83%, 53%);
                 }
             }
             input {
