@@ -27,7 +27,7 @@ const Card = ({info, showInfo}) => {
             transition-all delay-200 ease-in-out hover:border-white1 hover:bg-default hover:text-white1 ">
               <Link to="/">{info.category}</Link>
             </div>
-            <img className='w-full md:w-[320px] rounded-md
+            <img className='w-[320px] rounded-md h-[250px]
              md:h-[250px] object-cover' src={info.imageSource} alt="building" />
             {/* CITY */}
             <h3 className='text-[hsl(228,68%,62%)] font-semibold mt-1 text-[1.1rem]'>{info.city}</h3>
