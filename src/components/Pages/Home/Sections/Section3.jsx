@@ -8,10 +8,11 @@ import {useQuery, gql} from '@apollo/client'
 const GET_CARD = gql`
     query Get_House {
       houses(
-      filters: { categories: { Category: { contains: "Rent" } } }
+      filters: { categories: { Category: { contains: "Buy" } } }
       pagination: { limit: 6 }
     ) {
       data {
+        id
         attributes {
           location {
             data {

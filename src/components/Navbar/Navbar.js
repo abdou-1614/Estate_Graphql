@@ -8,7 +8,7 @@ import useClick from '../../CustomHook/Click'
 const Navbar = () => {
     const MenuLink = ({url, path}) => {
         return (
-            <li className='pb-3 md:pb-0 text-[20px] md:text-xl text-default font-[500] md:font-semibold transform transition delay-150 ease-out  hover:text-second'>
+            <li className='pb-3 md:pb-0 text-[20px] md:text-xl text-default font-[500] md:font-semibold transform transition delay-150 ease-out  hover:text-second focus:text-second'>
             <NavLink
             to={`${url}`}
             className=""
