@@ -27,8 +27,8 @@ const Card = ({info, showInfo}) => {
             transition-all delay-200 ease-in-out hover:border-white1 hover:bg-default hover:text-white1 ">
               <Link to="/">{info.category}</Link>
             </div>
-            <img className='w-full rounded-md h-[250px]
-             md:h-[250px] object-cover' src={info.imageSource} alt="building" />
+            <img className='w-full md:w-[300px] rounded-md h-[250px]
+             object-cover' src={info.imageSource} alt="building" />
             {/* CITY */}
             <h3 className='text-[hsl(228,68%,62%)] font-semibold mt-1 text-[1.1rem]'>{info.city}</h3>
             <h4 className='text-[hsl(228,68%,62%)] text-[0.9rem] font-[500] flex gap-[3px]'>
@@ -88,7 +88,7 @@ const Card = ({info, showInfo}) => {
                 <h2
                   style={showInfo.rent ? {} : { display: "none" }}
                   className='text-[1.5rem] text-second font-bold'
-                >{`${covnertRent(info.rent)}`}</h2>
+                >{`${covnertRent(info.rent)}$/m`}</h2>
               </div>
               {/* SEE MORE BUTTON */}
               <div className="text-[0.9rem] bg-default py-2 px-4 text-white1 rounded-md font-semibold transition-all delay-200 ease-in-out border border-solid border-lavandage hover:bg-second  hover:border-default ">
