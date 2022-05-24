@@ -2,7 +2,8 @@ import React, {useState} from 'react'
 import {BsArrowRight} from 'react-icons/bs'
 import {FcHome} from 'react-icons/fc'
 import {NavLink, Link} from 'react-router-dom'
-import {FaBars, Fatimes} from 'react-icons/fa'
+import {FaBars} from 'react-icons/fa'
+import {GrClose} from 'react-icons/gr'
 import {GiExitDoor} from 'react-icons/gi'
 import useClick from '../../CustomHook/Click'
 const Navbar = () => {
@@ -25,7 +26,7 @@ const Navbar = () => {
     return (
         <nav className='flex justify-between items-center fixed top-0 left-1/2 bg-white1 -translate-x-1/2 backdrop-blur-lg py-2 px-10 max-w-[1440px] w-full z-50 shadow-primary '>
             <div>
-                <Link to="/" className='flex items-center justify-center gap-1'><p className='font-bold text-[40px] text-default top-1'>Real</p> <FcHome className='text-[40px]'/></Link>
+                <Link to="/" className='flex items-center justify-center gap-1'><p className='font-bold text-[40px] text-default'>Real</p> <FcHome className='text-[40px] -translate-y-[3px]'/></Link>
             </div>
             <article className='hidden md:block static bg-trasparent scale-100 '>
                 <ul className='flex items-center gap-9 md:gap-11 font-semibold md:text-xl text-default' ref={domNode}>
@@ -48,7 +49,7 @@ const Navbar = () => {
             <Link to='/auth' className='hidden md:block'>
                 <span className='font-semibold flex items-center gap-1 text-[20px]'>Login <GiExitDoor className='text-[28px] text-default'/></span>
             </Link>
-            <button className='md:hidden' onClick={() => setToggel(!toggel)} ><span>{toggel ? <FaBars className='translate-x-px text-2xl font-[900] right-1'/> : <FaBars className='translate-x-px text-2xl font-[900] right-1'/>}</span></button>
+            <button className='md:hidden' onClick={() => setToggel(!toggel)} ><span>{toggel ? <GrClose className='translate-x-px text-2xl font-[900] right-1 text-default'/> : <FaBars className='translate-x-px text-2xl font-[900] right-1 text-default'/>}</span></button>
         </nav>
   )
 }
